@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Signup Forms</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <section class="first_section">
+        <div>
+          <header>
+            <b>
+              Learn to code by <br />
+              watching others
+            </b>
+          </header>
+        </div>
+
+        <div>
+          <p>
+            See how experienced developers solve problems in real-time. <br />
+            Watching scripted tutorials in great, but understanding how <br />
+            developers think is invalauble.
+          </p>
+        </div>
+      </section>
+
+      <section class="second_section">
+        <div class="second_div">
+          <div class="top_btn">
+            Try it free 7 days
+            <span class="then">then $20/mo, thereafter.</span>
+          </div>
+
+          <div id="error"></div>
+          <form action="" class="form_container" method="get" id="signUp">
+            <div class="firstName">
+              <input type="text" id="fName" placeholder="First Name" />
+              <div id="errorFname"></div>
+            </div>
+
+            <div class="lastName">
+              <input type="text" id="lName" placeholder="Last Name" />
+              <div id="errorLname"></div>
+            </div>
+
+            <div class="e_address">
+              <input type="email" id="mail" placeholder="Email Address" />
+              <div id="errorMail"></div>
+            </div>
+
+            <div class="pword">
+              <input type="password" id="pword" placeholder="Password" />
+              <div id="errorPass"></div>
+            </div>
+
+            <button class="bottom_btn" id="btn">CLAIM YOUR FREE TRIAL</button>
+
+            <div class="bottom_para">
+              By clicking the button, you are agreeing to our
+              <span class="terms">Terms and Services.</span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
